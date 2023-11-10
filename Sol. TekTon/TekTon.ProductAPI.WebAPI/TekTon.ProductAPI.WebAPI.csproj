@@ -17,6 +17,7 @@
     <ProjectReference Include="..\TekTon.ProductAPI.Application\TekTon.ProductAPI.Application.csproj" />
     <ProjectReference Include="..\TekTon.ProductAPI.Infrastructure.CrossCutting\TekTon.ProductAPI.Infrastructure.CrossCutting.csproj" />
     <ProjectReference Include="..\TekTon.ProductAPI.Repository\TekTon.ProductAPI.Repository.csproj" />
+    <ProjectReference Include="..\TekTon.ProductAPI.Seed\TekTon.ProductAPI.Seed.csproj" />
   </ItemGroup>
 
 </Project>

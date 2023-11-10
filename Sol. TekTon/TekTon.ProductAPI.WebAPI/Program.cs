@@ -1,18 +1,21 @@
+using MediatR;
 using Microsoft.AspNetCore.DataProtection.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+ 
 using TekTon.ProductAPI.Application.Implementation;
 using TekTon.ProductAPI.Application.Interface;
 using TekTon.ProductAPI.Domain.Interface;
 using TekTon.ProductAPI.Domain.Seedwork;
+using TekTon.ProductAPI.DTO;
 using TekTon.ProductAPI.Infrastructure.CrossCutting.Adapter;
 using TekTon.ProductAPI.Infrastructure.CrossCutting.AutoMapper;
 using TekTon.ProductAPI.Repository.Context;
 using TekTon.ProductAPI.Repository.Repositories;
 using TekTon.ProductAPI.Repository.Seedwork.StoreProcedure;
 using TekTon.ProductAPI.Repository.UnitofWork;
- 
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,13 +42,14 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped<IStoreProcedureManager,SqlServerProcedureManager>();
+builder.Services.AddScoped<IStoreProcedureManager, SqlServerProcedureManager>();
 
 #endregion
 
 #region Application
 
 builder.Services.AddScoped<IProductoService, ProductoService>();
+builder.Services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
 
 #endregion
 
@@ -54,7 +58,7 @@ builder.Services.AddScoped<IProductoService, ProductoService>();
 #region Extensions
 
 builder.Services.AddScoped<ITypeAdapterFactory, AutoMapperTypeAdapterFactory>();
- 
+
 var serviceProvider = new ServiceCollection()
          .AddScoped<ITypeAdapterFactory, AutoMapperTypeAdapterFactory>()
          .BuildServiceProvider();

@@ -45,6 +45,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2.1 MainBoundedContext", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TekTon.ProductAPI.Repository", "TekTon.ProductAPI.Repository\TekTon.ProductAPI.Repository.csproj", "{C5C3694A-4D4C-4721-99A9-BCCF3DC2EDE3}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TekTon.ProductAPI.Seedwork", "TekTon.ProductAPI.Seedwork\TekTon.ProductAPI.Seedwork.csproj", "{C57B2925-123F-443B-9D56-2F3D3ADCCE85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TekTon.ProductAPI.Seed", "TekTon.ProductAPI.Seed\TekTon.ProductAPI.Seed.csproj", "{6073E2BF-BB9F-4D1E-B0A0-097E0C0FB1DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +87,14 @@ Global
 		{C5C3694A-4D4C-4721-99A9-BCCF3DC2EDE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5C3694A-4D4C-4721-99A9-BCCF3DC2EDE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5C3694A-4D4C-4721-99A9-BCCF3DC2EDE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C57B2925-123F-443B-9D56-2F3D3ADCCE85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C57B2925-123F-443B-9D56-2F3D3ADCCE85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C57B2925-123F-443B-9D56-2F3D3ADCCE85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C57B2925-123F-443B-9D56-2F3D3ADCCE85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6073E2BF-BB9F-4D1E-B0A0-097E0C0FB1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6073E2BF-BB9F-4D1E-B0A0-097E0C0FB1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6073E2BF-BB9F-4D1E-B0A0-097E0C0FB1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6073E2BF-BB9F-4D1E-B0A0-097E0C0FB1DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,6 +120,8 @@ Global
 		{EC40947B-3593-4EA6-B13F-9EE44A02435C} = {32BF63CC-6016-405A-8D7A-8CA955594C2A}
 		{C6FE0E98-0796-4CFB-8ABE-F414B564408C} = {FD326A25-6083-48CF-943D-92798324573B}
 		{C5C3694A-4D4C-4721-99A9-BCCF3DC2EDE3} = {C6FE0E98-0796-4CFB-8ABE-F414B564408C}
+		{C57B2925-123F-443B-9D56-2F3D3ADCCE85} = {A26397B5-BCFA-4294-B3BD-A7A875478942}
+		{6073E2BF-BB9F-4D1E-B0A0-097E0C0FB1DA} = {5C210C2E-CF6C-4B23-8B47-FD3026B18E5F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DBE7D7DB-B9F6-4CCD-866B-1BE7F0F90EE8}

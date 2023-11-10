@@ -26,7 +26,5 @@ namespace TekTon.ProductAPI.DTO
         [JsonProperty("nombreProducto")]
         [SwaggerSchema("Nombre del producto que se acaba de registrar.")]
         public string? NombreProducto { get; set; }
-
-
     }
 }
